@@ -30,6 +30,7 @@ a.nound{
 	color:#2ecc71;
 	display: block;
 	    padding-bottom: 22px;
+		margin: 0 37px;
 }
 .titl{
 	float: left;
@@ -42,7 +43,7 @@ a.nound{
 width: 233px;
     background: #fff;
 	float: left;
-	padding: 22px 37px;
+	padding: 22px 0;
 	position: relative;
 	
 }
@@ -61,18 +62,33 @@ box-shadow: -0px -5px 5px 0 rgba(0, 0, 0, 0.05);
 	color: #9e9e9e;
 	font-size: 12px;
 	letter-spacing: 0.7px;
+	margin: 10px 37px;
 	}
 #navleft nav a{
 	color: #b5b5b5;
 	font-size: 15px;
 	padding: 10px 0;
 }
+#navleft nav.utama a{
+	padding-left:37px;
+	padding-right:37px;
+	}
+#navleft nav.utama a:hover{
+	    background: #f7f7f7;
+}
+#navleft nav.secondm a{
+	margin-left:37px;
+	margin-right:37px;
+}
+#navleft nav.secondm a:hover{
+	text-decoration: underline;
+}
 #navleft nav a img{
 	    margin-right: 10px;
     padding-bottom: 2px;
 }
 .widg {
-	padding: 24px 8px 16px;
+	padding: 24px 0 16px;
 }
 #utam {
 	border-bottom:1px solid #eeeeee;
