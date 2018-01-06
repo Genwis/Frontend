@@ -11,6 +11,7 @@ Genwis
   <a class="nav-link <?php if($stg==true){echo "actived";}?>" href="./dsettings.php"><img src="<?php if($stg==true){echo "./icon/active/settings-1.png";}else{echo "./icon/noactive/settings-1.png";} ?>"/> Settings</a>
 </nav>
 </div>
+<div id='borderer'></div>
 <div class='widg'>
 <h4>OTHERS</h4>
 <nav class="nav flex-column secondm">
@@ -22,7 +23,7 @@ Genwis
 </div>
 <div id='mainthing'>
 <div id='navco'>
-<div class='titl'><?php echo $titl;?></div> <div class='rightsd'>notifbel foto_bulet "Hello, Nara"</div>
+<div class='titl'><?php echo $titl;?></div> <div class='rightsd'><img class='notif' src='./icon/noactive/notifications-bell-button.png'/> <img src='/' class='fotop'/> Hello, Nara</div>
 <div style='clear:both;'></div>
 </div>
 <div id='realmain'>

@@ -38,6 +38,7 @@ a.nound{
 }
 .rightsd{
 	float:right;
+	font-size: 15px;
 }
 #navleft{
 width: 233px;
@@ -90,8 +91,9 @@ box-shadow: -0px -5px 5px 0 rgba(0, 0, 0, 0.05);
 .widg {
 	padding: 24px 0 16px;
 }
-#utam {
+#borderer {
 	border-bottom:1px solid #eeeeee;
+	margin: 0 30px;
 }
 #mainthing{
 flex-grow: 1;
@@ -111,6 +113,18 @@ flex-grow: 1;
   right: 0;
   z-index: -1;
 box-shadow: 5px -0px 5px 0 rgba(0, 0, 0, 0.05);
+}
+.notif{
+	margin-right: 50px;
+	display: inline-block;
+}
+.fotop{
+	margin-right:18px;
+	width: 33px;
+	height: 33px;
+	background:#000;
+	border-radius: 100%;
+	border:0;
 }
 #realmain{
 	padding: 40px;
