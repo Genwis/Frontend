@@ -18,5 +18,60 @@ window.history.pushState("object or string", "Title", "./new-url");
 <?php $dsb=false;$atr=true;$mng=false;$stg=false;
 $titl="Attraction";
 include ('includes/dheader.php');?>
-Waow
+<div class='widg' id='culinair'>
+<h4>Culinary</h4>
+8 Attractions available
+<div class='kotaq'>
+<div class="row">
+<div class="culco col-xl-4 col-lg-4 col-md-5 col-sm-7">
+<div class='dalm'>
+<img src='/'/>
+<h2>Bad gridding</h2>
+<div class='par'>Breather Cafe is one of restaurants located on Mumbai, India... Read More</div>
+</div>
+</div>
+
+<div class="culco col-xl-4 col-lg-4 col-md-5 col-sm-7">
+<div class='dalm'>
+<img src='/'/>
+<h2>Why am I alive</h2>
+<div class='par'>Breather Cafe is one of restaurants located on Mumbai, India... Read More</div>
+</div>
+</div>
+
+<div class="culco col-xl-4 col-lg-4 col-md-5 col-sm-7">
+<div class='dalm'>
+<img src='/'/>
+<h2>Bootstrap jancoeg</h2>
+<div class='par'>Breather Cafe is one of restaurants located on Mumbai, India... Read More</div>
+</div>
+</div>
+
+<div class="culco col-xl-4 col-lg-4 col-md-5 col-sm-7">
+<div class='dalm'>
+<img src='/'/>
+<h2>Kappa cafet</h2>
+<div class='par'>Breather Cafe is one of restaurants located on Mumbai, India... Read More</div>
+</div>
+</div>
+
+<div class="culco col-xl-4 col-lg-4 col-md-5 col-sm-7">
+<div class='dalm'>
+<img src='/'/>
+<h2>Fuck bootstrap</h2>
+<div class='par'>Breather Cafe is one of restaurants located on Mumbai, India... Read More</div>
+</div>
+</div>
+<div class="culco col-xl-4 col-lg-4 col-md-5 col-sm-7">
+<div class='dalm'>
+<img src='/'/>
+<h2>I hate bootstrap</h2>
+<div class='par'>Breather Cafe is one of restaurants located on Mumbai, India... Read More</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
 <?php include ('includes/dfooter.php'); ?>

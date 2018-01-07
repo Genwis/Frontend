@@ -43,7 +43,7 @@ a.nound{
 	letter-spacing: 0.4px;
 }
 #navleft{
-width: 233px;
+min-width: 233px;
     background: #fff;
 	float: left;
 	padding: 22px 0;
@@ -136,7 +136,7 @@ box-shadow: 5px -0px 5px 0 rgba(0, 0, 0, 0.05);
 	letter-spacing: 0.4px;
 	
 }
-.widg{
+#realmain .widg,#culinair  .widg{
 	margin-bottom: 55px;
 	}
 #quicks{
@@ -209,6 +209,37 @@ letter-spacing: 0.7px;
 font-size: 12px;
 font-weight: 500;
 color: #616161;
+}
+#culinair .kotaq{
+	padding: 20px;
+}
+#culinair .culco{
+		padding: 20px;
+}
+#culinair .culco h2{
+	letter-spacing: 0.5px;
+  text-align: left;
+  color: #424242;
+  font-size: 20px;
+}
+#culinair .dalm{
+	padding: 20px;
+	}
+#culinair .row{
+	margin: 0;
+}
+#culinair .culco img{
+	width: 100%;
+  min-height: 218px;
+  display:block;
+border-radius: 5px;
+  background-color: #fafafa;
+  margin-bottom: 25px;
+}
+#culinair .culco .par{
+	font-size: 14px;
+	 letter-spacing: 0.8px;
+  color: #bdbdbd;
 }
 .dhtml {
     height: 100%;
