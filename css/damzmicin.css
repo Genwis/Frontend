@@ -4,7 +4,7 @@ src: url(../font/Poppins/Poppins-Medium.ttf);
 }
 @font-face {
 font-family: Lato;
-src: url(../font/Lato/Lato-Medium.ttf);
+src: url(../font/Lato/Lato-Regular.ttf);
 }
 .dbbod{
 	background:#fcfcfc;
@@ -142,13 +142,14 @@ box-shadow: 5px -0px 5px 0 rgba(0, 0, 0, 0.05);
 #quicks{
 	
 }
-#quicks .kotaq{
+.kotaq{
 border-radius: 5px;
   background-color: #ffffff;
   box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.05);
 	padding: 21px;
-	margin: 10px 25px 0 15px;
+margin-top: 10px
 }
+#quicks .kotaq{	margin: 10px 25px 0 15px;}
 #quicks .ikon{
 	background-repeat: no-repeat;
     background-position: center;
@@ -190,8 +191,25 @@ border-radius: 5px;
 	color: #424242;
 	letter-spacing: 0.8px;
 	font-size: 28px;
+	font-family: Lato;
 }
-
+.latestu thead th{
+	border: 0;
+	letter-spacing: 0.9px;
+	font-size: 16px;
+	color: #9e9e9e;
+	font-weight: normal;
+}
+.latestu tbody tr:first-child  th,.latestu tbody tr:first-child  td{ 
+border: 0;
+}
+.latestu tbody th, .latestu tbody td{
+font-family: Lato;
+letter-spacing: 0.7px;
+font-size: 12px;
+font-weight: 500;
+color: #616161;
+}
 .dhtml {
     height: 100%;
 }
