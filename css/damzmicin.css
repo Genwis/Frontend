@@ -35,10 +35,12 @@ a.nound{
 .titl{
 	float: left;
 	font-size: 20px;
+	letter-spacing: 1.1px;
 }
 .rightsd{
 	float:right;
 	font-size: 15px;
+	letter-spacing: 0.4px;
 }
 #navleft{
 width: 233px;
@@ -88,7 +90,7 @@ box-shadow: -0px -5px 5px 0 rgba(0, 0, 0, 0.05);
 	    margin-right: 10px;
     padding-bottom: 2px;
 }
-.widg {
+#navleft .widg {
 	padding: 24px 0 16px;
 }
 #borderer {
@@ -128,6 +130,11 @@ box-shadow: 5px -0px 5px 0 rgba(0, 0, 0, 0.05);
 }
 #realmain{
 	padding: 40px;
+}
+#realmain .widg h4{
+	font-size: 16px;
+	letter-spacing: 0.4px;
+	
 }
 .dhtml {
     height: 100%;

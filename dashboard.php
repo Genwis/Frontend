@@ -15,23 +15,25 @@ window.history.pushState("object or string", "Title", "./new-url");
 </script>
 </head>
 <body class='dbbod'>
-<div id='navleft'>
-<a class='logog nound' href='#'>
-Genwis
-</a>
-<nav class="nav flex-column">
-  <a class="nav-link active" href="#">Active</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link" href="#">Link</a>
-  <a class="nav-link disabled" href="#">Disabled</a>
-</nav>
+<?php $dsb=true;$atr=false;$mng=false;$stg=false;$janc="kappa";
+$titl="Dashboard";
+include ('includes/dheader.php');?>
+
+<div class='widg nobutton'>
+<h4>Quick Statistic</h4>
+3 boxes
 </div>
-<div id='mainthing'>
-<div id='navco'>
-<div class='titl'>Dashboard</div> <div class='rightsd'>notifbel foto_bulet "Hello, Nara"</div>
-<div style='clear:both;'></div>
+
+<div class='widg'>
+<h4>Revenue Statistic</h4>
+
 </div>
+<div class='widg'>
+<h4>User Statistic</h4>
+
 </div>
-<div style='clear:both;'></div>
-</body>
-</html>
+<div class='widg'>
+<h4>Latest Users</h4>
+
+</div>
+<?php include ('includes/dfooter.php'); ?>
