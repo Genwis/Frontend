@@ -19,8 +19,23 @@ window.history.pushState("object or string", "Title", "./new-url");
 $titl="Attraction";
 include ('includes/dheader.php');?>
 <div class='widg' id='culinair'>
+<div class='lefter'>
 <h4>Culinary</h4>
-8 Attractions available
+<div class='jumat'>8 Attractions available</div>
+</div>
+<div class='righter'>
+<input class='serc' type='text' placeholder='Search here'/>
+
+<select class='selc' name="cars">
+  <option value="volvo">Culinary</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<button class='tamb' type="button" onclick="alert('Hello World!')">Add Attraction</button>
+</div>
+<div style='clear: both;'></div>
 <div class='kotaq'>
 <div class="row">
 <div class="culco col-xl-4 col-lg-4 col-md-5 col-sm-7">
