@@ -21,16 +21,45 @@ include ('includes/dheader.php');?>
 
 <div class='widg nobutton'>
 <h4>Quick Statistic</h4>
-3 boxes
+<div class="row" id='quicks'>
+    <div class="kotaq col-md-auto">
+	<div class='ikon ac-us'></div>
+	<div class='statin'>
+      <span class='inf'>Active user</span>
+	  <span class='pcount'><span class='count'>2720</span></span>
+	  </div>
+	<div style='clear:both;'></div>
+    </div>
+    <div class="kotaq col-md-auto">
+	<div class='ikon boo'></div>
+	<div class='statin'>
+      <span class='inf'>Booked</span>
+	  <span class='pcount'><span class='count'>220</span> itinerary</span>
+	  </div>
+	  <div style='clear:both;'></div>
+    </div>
+    <div class="kotaq col">
+	<div class='ikon rev'></div>
+	<div class='statin'>
+      <span class='inf'>Revenue</span>
+	  <span class='pcount'><span class='count'>IDR 270.000.000</span></span>
+	  </div>
+	  <div style='clear:both;'></div>
+    </div>
+  </div>
 </div>
-
+<div class="row">
+<div class="col">
 <div class='widg'>
 <h4>Revenue Statistic</h4>
 
 </div>
+</div><div class="col">
 <div class='widg'>
 <h4>User Statistic</h4>
 
+</div>
+</div>
 </div>
 <div class='widg'>
 <h4>Latest Users</h4>
