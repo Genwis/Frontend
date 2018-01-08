@@ -92,17 +92,25 @@ include ('includes/dheader.php');?>
 <div id='content'>
 <div class="kotaq">
 <div>
-    <span class="close">&times;</span>
+    <span class="close">cancel</span>
     <h4>Add Attraction</h4>
+	
 	</div>
 	<div>
-	Attraction Name
+	<h5>Attraction Name</h5>
+	<input class='adt' placeholder='Name' type='text'/>
 	</div>
 	<div>
-	Attraction Type
+	<h5>Attraction Type</h5>
+	
 	</div>
 	<div>
-	Attraction Description
+	<h5>Attraction Description</h5>
+	<textarea></textarea>
+	</div>
+	<div>
+	<h5>Image</h5>
+	<input type="file" name="file"
 	</div>
   </div></div>
 <script type='text/javascript'>
