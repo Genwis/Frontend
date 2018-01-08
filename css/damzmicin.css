@@ -99,6 +99,7 @@ box-shadow: -0px -5px 5px 0 rgba(0, 0, 0, 0.05);
 }
 #mainthing{
 flex-grow: 1;
+
 }
 #navco{
 	background: #fff;
@@ -130,6 +131,7 @@ box-shadow: 5px -0px 5px 0 rgba(0, 0, 0, 0.05);
 }
 #realmain{
 	padding: 40px;
+	position: relative;
 }
 #realmain .widg h4{
 	font-size: 16px;
@@ -283,6 +285,13 @@ border-radius: 5px;
   background-color: #3498db;
   color: #fff;
   border: 0!important;
+}
+#content{
+
+	display: none;
+}
+#content .kotaq{
+	padding: 58px;
 }
 .dhtml {
     height: 100%;

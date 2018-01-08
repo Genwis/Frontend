@@ -33,7 +33,7 @@ include ('includes/dheader.php');?>
   <option value="audi">Audi</option>
 </select>
 
-<button class='tamb' type="button" onclick="alert('Hello World!')">Add Attraction</button>
+<input class='tamb' type='button' id='hideshow' value='Add Attraction'>
 </div>
 <div style='clear: both;'></div>
 <div class='kotaq'>
@@ -65,7 +65,7 @@ include ('includes/dheader.php');?>
 <div class="culco col-xl-4 col-lg-4 col-md-5 col-sm-7">
 <div class='dalm'>
 <img src='/'/>
-<h2>Kappa cafet</h2>
+<h2>Bootstrap = worst framework</h2>
 <div class='par'>Breather Cafe is one of restaurants located on Mumbai, India... Read More</div>
 </div>
 </div>
@@ -89,4 +89,42 @@ include ('includes/dheader.php');?>
 </div>
 </div>
 </div>
+<div id='content'>
+<div class="kotaq">
+<div>
+    <span class="close">&times;</span>
+    <h4>Add Attraction</h4>
+	</div>
+	<div>
+	Attraction Name
+	</div>
+	<div>
+	Attraction Type
+	</div>
+	<div>
+	Attraction Description
+	</div>
+  </div></div>
+<script type='text/javascript'>
+var con = document.getElementById('content');
+var cul = document.getElementById('culinair');
+var btn = document.getElementById("hideshow");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    con.style.display = "block";
+	cul.style.display = "none";
+}
+span.onclick = function() {
+    con.style.display = "none";
+	cul.style.display = "block";
+}
+/*
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == con) {
+        con.style.display = "none";
+    }
+}*/
+	</script>
 <?php include ('includes/dfooter.php'); ?>
