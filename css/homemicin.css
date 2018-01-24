@@ -1,0 +1,49 @@
+html{
+	height: 100%;
+}
+body{
+height: 100%;
+}
+.full{
+position: relative;	
+    height: 100%;
+}
+
+#opener{
+	background-image: url('../property/ss-dashboard@3x.png');
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+	min-height: 100%;
+
+    display: table;
+    width: 100%;
+}
+.daleman{
+    display: table-cell;
+    vertical-align: middle;
+	text-align: center;
+	color: #fff;
+	font-family: Poppins;
+
+}
+.daleman h1{
+	  font-size: 34px;
+}
+.getstart{
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #ffffff;
+    padding: 0 40px;
+    border-radius: 26px;
+    border: 2px solid #fff;
+    height: 52px;
+    display: table;
+    line-height: 48px;
+	margin: 0 auto;
+}

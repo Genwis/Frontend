@@ -1,6 +1,6 @@
 <div id='navleft'>
 <a class='logog nound' href='#'>
-Genwis
+Genpart
 </a>
 <div class='widg' id='utam'>
 <h4>MENU</h4>

@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Genwis Test</title>
+  <title>Genpart</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./css/damzmicin.css">
+  <link rel="stylesheet" href="./css/homemicin.css">
 </head>
 <body>
-<div class="container">
-<?php include ('includes/header.php'); ?>
+<div class="full">
+<div class='bag' id='opener'>
+<div class='daleman'>
+
+
+Genpart	MENU MENU MENU
+<br/>
+<h1>Genwis Partner for growth local agent or local partner</h1>
+<br/>
+Genwis Partner is platform for local partner or local travel agent that would help to growth tour business
+in the some city with three powerfull fiture is view all statistic, manage user and manage attraction.
+<br/>
+<!--<a class='btn btn-primary'>Get Started</a>-->
+<a href='#' class='getstart'>Get Started</a>
+</div>
+</div>
+
+
+
 <div class='micin part1'>
-Genwis For Your Tour!
-<br/>
-Enjoy with your tour with your smile and don't forget to be happy
-<br/>
-<a class='btn btn-primary'>Start Tour</a>
+
+
 </div>
 <div class='micin part2'>
 What do you think?
@@ -56,6 +71,7 @@ What Will You Get?
 <h5>h5 Bootstrap heading (14px)</h5>
 <h6>h6 Bootstrap heading (12px)</h6>
 <?php include ('includes/footer.php'); ?>
+
 </div>
 
 </body>
