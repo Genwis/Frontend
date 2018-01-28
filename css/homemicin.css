@@ -1,22 +1,75 @@
 html{
-	height: 100%;
+
 }
 body{
-height: 100%;
+
 }
 .full{
 position: relative;	
     height: 100%;
 }
+#barnav{
+	padding: 42px;
+	margin: 0 auto;
+	line-height: 45px;
+	max-width: 1010px;
+	color:#fff;
 
+
+}
+.juds{
+	  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  	font-family: Lato;
+	float: left;
+}
+.menus,.juds,.signin{
+	display:block;
+}
+.signin{
+	float: right;
+	border-radius: 22px;
+  background-color: #ffffff;
+  padding: 0 37px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: #2ecc71;
+}
+.menus{
+	  font-family: Poppins;
+	      text-align: center;
+}
+.menus .m{
+	margin: 0 15px;
+	font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-align: left;
+  color: #ffffff;
+}
 #opener{
-	background-image: url('../property/ss-dashboard@3x.png');
-	background-repeat: no-repeat;
-    background-size: 100% 100%;
-	min-height: 100%;
-
+    background-image: url(../property/group-5.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    /* min-height: 100%; */
+    height: 911px;
+    background-size: auto 100%;
+}
+.ghost{
+	height:474px;
+	/*padding-bottom:395px;*/
     display: table;
+	
     width: 100%;
+}
+.padderer{
+	display:table;
+	height:395px;
+	width:100%;
+	background: #000;
+	opacity:0.2;
 }
 .daleman{
     display: table-cell;

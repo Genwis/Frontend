@@ -13,10 +13,13 @@
 <body>
 <div class="full">
 <div class='bag' id='opener'>
+<nav id='barnav'>
+<div class='juds'>Genpart</div>	<div class='menus'><a href='#' class='m'>How it works</a> <a href='#' class='m'>Features</a> <a href='#' class='m'>About</a><a class='signin' href='#'>Sign in</a></div> 
+</nav>
+<div class='ghost'>
 <div class='daleman'>
 
 
-Genpart	MENU MENU MENU
 <br/>
 <h1>Genwis Partner for growth local agent or local partner</h1>
 <br/>
@@ -26,6 +29,8 @@ in the some city with three powerfull fiture is view all statistic, manage user 
 <!--<a class='btn btn-primary'>Get Started</a>-->
 <a href='#' class='getstart'>Get Started</a>
 </div>
+</div>
+
 </div>
 
 
@@ -40,7 +45,7 @@ What do you think?
 Genwis<br/>
 Genwis adalah sebuah aplikasi mobile yang sangat meng-genrate itinerar wisata atau dapat mengatur jadwal wisata user setiap harinya sesuai dengan kata tujuan, budget, dan jangka waktu yang user tentukan berdasarkan aplikasi Genwis
 </div>
-<div class='micin part3'>
+<!--<div class='micin part3'>
 What Will You Get?
 <br/>
   <div class="row">
@@ -60,7 +65,7 @@ What Will You Get?
 	  Anda dapat mengubah tempat atau jangka waktu kunjungan dari setiap tempat-tempat yang direkomendasikan oleh aplikasi Genwis
     </div>
   </div>
-</div>
+</div>-->
 
 
 
@@ -70,7 +75,7 @@ What Will You Get?
 <h4>h4 Bootstrap heading (18px)</h4>
 <h5>h5 Bootstrap heading (14px)</h5>
 <h6>h6 Bootstrap heading (12px)</h6>
-<?php include ('includes/footer.php'); ?>
+<?php //include ('includes/footer.php'); ?>
 
 </div>
 
