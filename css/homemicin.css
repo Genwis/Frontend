@@ -12,7 +12,7 @@ position: relative;
 	padding: 42px;
 	margin: 0 auto;
 	line-height: 45px;
-	max-width: 1010px;
+	max-width: 1210px;
 	color:#fff;
 
 
@@ -53,12 +53,13 @@ position: relative;
     background-image: url(../property/group-5.png);
     background-repeat: no-repeat;
     background-position-x: center;
+	background-position-y: -305px;
     /* min-height: 100%; */
     height: 911px;
-    background-size: auto 100%;
+    background-size: auto auto;
 }
 .ghost{
-	height:474px;
+	height:386px;
 	/*padding-bottom:395px;*/
     display: table;
 	
@@ -76,11 +77,21 @@ position: relative;
     vertical-align: middle;
 	text-align: center;
 	color: #fff;
-	font-family: Poppins;
-
+font-family: Poppins;
 }
 .daleman h1{
 	  font-size: 34px;
+	  font-weight: normal;
+	  letter-spacing: 1.3px;
+}
+.daleman .gpart{
+	font-weight: bold;
+}
+.daleman p{
+	font-family: Lato;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.9px;
 }
 .getstart{
     font-family: Poppins;
@@ -99,4 +110,24 @@ position: relative;
     display: table;
     line-height: 48px;
 	margin: 0 auto;
+}
+.micin{
+	padding-top: 158px;
+}
+.micin h2{
+  font-family: Poppins;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.09;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: rgba(44, 62, 80, 0.92);
+}
+.micin hr{
+	width: 72px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #e0e0e0;
+  border: 0;
+  margin-top: 30px;
 }
