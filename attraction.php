@@ -1,3 +1,4 @@
+<?php include ('includes/checker.php');?>
 <!DOCTYPE html>
 <html lang="en" class='dhtml'>
 <head>

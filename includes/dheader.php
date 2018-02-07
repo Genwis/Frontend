@@ -1,7 +1,91 @@
-<div id='navleft'>
-<a class='logog nound' href='#'>
+<!DOCTYPE html>
+<html lang="en" class='dhtml'>
+<head>
+  <title>Genwis Test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/damzmicin.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <script>
+/*
+window.history.pushState("object or string", "Title", "./new-url");
+*/
+/*
+$(function() {
+      $("#ham").click( function()
+           {
+
+        $("#navleft").css('left','0' );
+
+           }
+      );
+});*/
+
+$(document).ready(function() {
+  /*$('#ham').click(function() {
+    //$("#navleft").toggleClass("down");
+	$('#navleft').animate({'left':'0px'}, 500)
+  });*/
+  /*
+  $( "#ham" ).click(function() {     
+    if($('#navleft:visible').length)
+        $('#navleft').hide("slide", { direction: "left" }, 1000);
+    else
+        $('#navleft').show("slide", { direction: "left" }, 1000);        
+});*/
+/*
+$('#ham').click(function() {
+ $('#navleft').toggle(function() {
+   $(this).animate({ 
+	 'left':'-100%'
+   }, 500);
+   },
+   function() {
+   $(this).animate({ 
+     'left':'0'
+   }, 500);
+ });
+});*/
+/*
+ $("#ham").click(function(){
+     if($("#navleft").css('left') == '0%'){
+       $("#navleft").stop().animate({left:'-100%'},1000);
+     };
+     if($("#navleft").css('left') == '-100%'){
+        $("#navleft").stop().animate({left:'0%'},1000);
+     };
+ });
+ */
+$("#navleft").css("left",'-'+$("#navleft").width()+'px');
+ var i = 0;
+$("#ham").on('click', function(){
+    if(i == 0) {
+        $("#navleft").stop().animate({left:'0%'},500);
+		$("#mainthing").stop().animate({marginLeft:$("#navleft").width()+'px'},500);
+        i = 1;
+    } else {
+        $("#navleft").stop().animate({left:'-'+$("#navleft").width()+'px'},500);
+		$("#mainthing").stop().animate({marginLeft:0},500);
+        i = 0;
+    }
+
+});
+});
+</script>
+</head>
+<body class='dbbod'>
+<div id='navco'>
+<div class='titl'><button id='ham'>=</button><a class='logog nound' href='#'>
 Genpart
-</a>
+</a></div> <div class='rightsd'><img class='notif' src='./icon/noactive/notifications-bell-button.png'/> <img src='/' class='fotop'/> Hello, Nara <a id='logou' href='./logout.php'>Logout</a></div>
+<div style='clear:both;'></div>
+</div>
+<div style='position: relative;'>
+<div id='navleft'>
+
 <div class='widg' id='utam'>
 <h4>MENU</h4>
 <nav class="nav flex-column utama">
@@ -22,8 +106,5 @@ Genpart
 </div>
 </div>
 <div id='mainthing'>
-<div id='navco'>
-<div class='titl'><?php echo $titl;?></div> <div class='rightsd'><img class='notif' src='./icon/noactive/notifications-bell-button.png'/> <img src='/' class='fotop'/> Hello, Nara</div>
-<div style='clear:both;'></div>
-</div>
+
 <div id='realmain'>
