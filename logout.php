@@ -11,5 +11,6 @@ $context  = stream_context_create($opts);
 
 $result = file_get_contents('http://dev.generatorwisata.com/api/agents/logout', false, $context);
 unset($_SESSION["logtok"]);
+unset($_SESSION["username"]);
 header("Location: index.php");
 ?>

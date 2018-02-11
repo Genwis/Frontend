@@ -37,6 +37,10 @@ position: relative;
   letter-spacing: 0.6px;
   color: #2ecc71;
 }
+.whitebut:hover{
+	text-decoration:none;
+	color: #2ecc71;
+}
 .menus{
 	  font-family: Poppins;
 	      text-align: center;
@@ -57,6 +61,10 @@ position: relative;
     /* min-height: 100%; */
     height: 911px;
     background-size: auto auto;
+	margin-bottom:78px
+}
+#howitworks{
+	padding-top:80px;
 }
 .ghost{
 	height:386px;
@@ -83,6 +91,7 @@ font-family: Poppins;
 	  font-size: 34px;
 	  font-weight: normal;
 	  letter-spacing: 1.3px;
+	  margin-bottom: 30px;
 }
 .daleman .gpart{
 	font-weight: bold;
@@ -92,6 +101,7 @@ font-family: Poppins;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.9px;
+  margin-bottom:30px;
 }
 .getstart{
     font-family: Poppins;
@@ -110,6 +120,11 @@ font-family: Poppins;
     display: table;
     line-height: 48px;
 	margin: 0 auto;
+	text-decoration: none!important;
+}
+.getstart:hover{
+	background:#fff;
+	color:#45d081;
 }
 .micin{
 	padding-top: 158px;
@@ -224,11 +239,12 @@ h2.mailh{
   font-weight: 500;
   letter-spacing: 0.7px;
   color: rgba(44, 62, 80, 0.92);
+  margin-bottom:20px;
 }
 #conq p{  font-family: Lato;
   font-size: 15px;
 
-  line-height: 1.47;
+  line-height: 1.5;
   letter-spacing: 0.6px;
   color: #b3b3b3;
 }
@@ -289,6 +305,7 @@ h2.mailh{
   letter-spacing: 0.7px;
   text-align: left;
   color: rgba(44, 62, 80, 0.92);
+  margin-bottom:10px;
 }
 
 #features #mai p{

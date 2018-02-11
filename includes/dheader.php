@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class='dhtml'>
 <head>
-  <title>Genwis Test</title>
+  <title>Genpart</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="./css/damzmicin.css">
   <link rel="stylesheet" href="./css/reset.css">
   <script>
@@ -59,8 +58,9 @@ $('#ham').click(function() {
      };
  });
  */
-$("#navleft").css("left",'-'+$("#navleft").width()+'px');
- var i = 0;
+//$("#navleft").css("left",'-'+$("#navleft").width()+'px');
+$("#mainthing").css("margin-left",$("#navleft").width()+'px');
+ var i = 1;
 $("#ham").on('click', function(){
     if(i == 0) {
         $("#navleft").stop().animate({left:'0%'},500);
@@ -73,17 +73,33 @@ $("#ham").on('click', function(){
     }
 
 });
+var k = 1;
+$("#menub").click( function()
+           {
+			   if(k==1){
+             $("#menup").css("display","block");
+			 k=0;
+			   }
+		 else{
+			 $("#menup").css("display","none");
+			 k=1;
+		 }
+           }
+      );
+
+
+
 });
 </script>
 </head>
 <body class='dbbod'>
 <div id='navco'>
-<div class='titl'><button id='ham'>=</button><a class='logog nound' href='#'>
+<div class='titl'><button id='ham'></button><span class='logog nound'>
 Genpart
-</a></div> <div class='rightsd'><img class='notif' src='./icon/noactive/notifications-bell-button.png'/> <img src='/' class='fotop'/> Hello, Nara <a id='logou' href='./logout.php'>Logout</a></div>
+</span></div> <div class='rightsd'><img class='notif' src='./icon/noactive/notifications-bell-button.png'/> <img src='./property/tempo/pogchamp.jpg' class='fotop'/> Hello, <?php echo $_SESSION['username'];?> <button id='menub'></button><div id='menup'><a id='logou' href='./logout.php'>Logout</a></div></div>
 <div style='clear:both;'></div>
 </div>
-<div style='position: relative;'>
+<div style=''>
 <div id='navleft'>
 
 <div class='widg' id='utam'>

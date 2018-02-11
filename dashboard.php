@@ -5,7 +5,7 @@ include ('includes/dheader.php');?>
 <div class='widg nobutton'>
 <h4>Quick Statistic</h4>
 <div class="row" id='quicks'>
-    <div class="kotaq col-md-auto">
+    <div class="kotaq col-md-auto actq">
 	<div class='ikon ac-us'></div>
 	<div class='statin'>
       <span class='inf'>Active user</span>
@@ -13,7 +13,7 @@ include ('includes/dheader.php');?>
 	  </div>
 	<div style='clear:both;'></div>
     </div>
-    <div class="kotaq col-md-auto">
+    <div class="kotaq col-md-auto booq">
 	<div class='ikon boo'></div>
 	<div class='statin'>
       <span class='inf'>Booked</span>
@@ -21,11 +21,11 @@ include ('includes/dheader.php');?>
 	  </div>
 	  <div style='clear:both;'></div>
     </div>
-    <div class="kotaq col">
+    <div class="kotaq col revq">
 	<div class='ikon rev'></div>
 	<div class='statin'>
       <span class='inf'>Revenue</span>
-	  <span class='pcount'><span class='count'>IDR 270.000.000</span></span>
+	  <span class='pcount'><span class='count'>270.000.000</span> IDR</span>
 	  </div>
 	  <div style='clear:both;'></div>
     </div>
@@ -45,8 +45,16 @@ include ('includes/dheader.php');?>
 </div>
 </div>
 <div class='widg'>
+<div class='widh'>
+<div class='lefte'>
 <h4>Latest Users</h4>
-<div class='kotaq'>
+</div>
+<div class='righte'>
+<a href='#'>View all</a>
+</div>
+<div style='clear: both;'></div>
+</div>
+<div class='kotaqu'>
 <table class="table latestu">
   <thead>
     <tr>
