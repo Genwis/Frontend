@@ -3,7 +3,16 @@ $titl="Manage User";
 include ('includes/dheader.php');?>
 <body class='dbbod'>
 <div class='widg' id='managu'>
+<div class='widh'>
+<div class='lefte'>
 <h4>Latest Users</h4>
+</div>
+<div class='righte'>
+<input type='text' id='sera' placeholder='Search here'>
+<a href='#'>View all</a>
+</div>
+<div style='clear: both;'></div>
+</div>
 <div class='kotaqu'>
 
 <table class="table latestu">

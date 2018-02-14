@@ -6,9 +6,9 @@ threadsafe: yes
 
 handlers:
 
-- url: /(.*\.(gif|png|jpg|ico|bmp|css|otf|eot|svg|ttf|woff))
+- url: /(.*\.(gif|png|jpg|ico|bmp|css|otf|eot|svg|ttf|woff|js))
   static_files: \1
-  upload: (.*\.(gif|png|jpg|ico|bmp|css|otf|eot|svg|ttf|woff))
+  upload: (.*\.(gif|png|jpg|ico|bmp|css|otf|eot|svg|ttf|woff|js))
 
 - url: /login
   script: login.php

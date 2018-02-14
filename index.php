@@ -10,26 +10,34 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/damzmicin.css">
   <link rel="stylesheet" href="./css/homemicin.css">
+<script>
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
 
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 1000);
+});
+</script>
 </head>
 <body>
 <div class="full">
 <div class='bag' id='opener'>
 <nav id='barnav'>
-<div class='juds'>Genpart</div>	<div class='menus'><a href='#howitworks' class='m'>How it works</a> <a href='#features' class='m'>Features</a> <a href='#' class='m'>About</a><a class='signin whitebut' href='./login.php'>Sign in</a></div> 
+<div class='juds'>Genpart</div>	<div class='menus'><a href='#howitworks' class='m'>How it works</a> <a href='#features' class='m'>Features</a> <a href='#about' class='m'>About</a><a class='signin whitebut' href='./login.php'>Sign in</a></div> 
 </nav>
 <div class='ghost'>
 <div class='daleman'>
 
 
-<h1><span class='gpart'>Genwis Partner</span> for growth local agent or local partner</h1>
+<h1><span class='gpart'>Genwis Partner</span> for growth local travel agents</h1>
 <p>
-Genwis Partner is a platform for local partner or local travel agent that would help to growth tour business
+Genwis Partner is a platform for local travel agents that would help to growth tour business
 <br/>
 in the some city with three powerfull fiture is view all statistic, manage user and manage attraction.
 </p>
 <!--<a class='btn btn-primary'>Get Started</a>-->
-<a href='#' class='getstart'>Get Started</a>
+<a href='./login.php' class='getstart'>Get Started</a>
 </div>
 </div>
 
@@ -113,7 +121,7 @@ services, such as editing or deleting a user data.
 </div>
 </div>
 </div>
-<div class='micin'>
+<div class='micin' id='about'>
 <h2 class='mailh'>Type your email here for more information from us</h2>
 <div class='modalb' id='subox'>
 <div id='mailrap'><div id='mail'></div><input type='text' class='inputs' placeholder='Type your email address here'> <a class='whitebut send' href='#'>Send</a></div>

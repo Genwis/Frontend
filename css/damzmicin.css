@@ -140,6 +140,7 @@ box-shadow: -0px -5px 5px 0 rgba(0, 0, 0, 0.05);
 #mainthing{
 /*flex-grow: 1;
 */
+display: none;
 }
 #navco{
 	background: #fff;
@@ -331,6 +332,10 @@ height: 0;
 .bokz .c.c5 a{color: #4b93cf;text-decoration: none!important;}
 .bokz .c2,.bokz .c4{
 }
+#managu .widh{
+	    line-height: 43px;
+
+}
 .widh .lefte {
 	display: inline-block;
 	vertical-align: middle;
@@ -495,9 +500,11 @@ border-radius: 5px;
   font-size: 15px;
   letter-spacing: 0.9px;
   color: #757575;
+  margin-right: 18px;
 }
 #culinair .selc{
 width: 144px;
+  margin-right: 18px;
     height: 38px;
     font-size: 15px;
     font-weight: 500;
@@ -582,4 +589,26 @@ a.actived {
 	vertical-align: middle;
 	    padding: 0!important;
 	background-position: center; 
+}
+#stats{
+}
+#stats1,#stats2{
+	width:50%;
+	float: left;
+}
+.leftpad{
+	margin-left: 20px;
+}
+.rightpad{
+	margin-right: 20px;
+}
+#sera{
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 2px #eeeeee;
+    /* height: 100%; */
+    padding: 10px;
+    line-height: 19px;
+    margin-right: 18px;
+    width: 298px;
 }

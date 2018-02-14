@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <?php
+  if($dsb==true){
+  echo "<script src='./js/Chart.min.js'></script>";
+  }
+  ?>
   <link rel="stylesheet" href="./css/damzmicin.css">
   <link rel="stylesheet" href="./css/reset.css">
   <script>
@@ -23,7 +28,10 @@ $(function() {
       );
 });*/
 
+//document.getElementById("mainthing").style.marginLeft = document.getElementById('navleft').offsetWidth;
 $(document).ready(function() {
+	$("#mainthing").css("display","block");
+	$("#mainthing").css("margin-left",$("#navleft").width()+'px');
   /*$('#ham').click(function() {
     //$("#navleft").toggleClass("down");
 	$('#navleft').animate({'left':'0px'}, 500)
@@ -59,7 +67,7 @@ $('#ham').click(function() {
  });
  */
 //$("#navleft").css("left",'-'+$("#navleft").width()+'px');
-$("#mainthing").css("margin-left",$("#navleft").width()+'px');
+
  var i = 1;
 $("#ham").on('click', function(){
     if(i == 0) {

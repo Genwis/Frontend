@@ -3,7 +3,7 @@ $titl="Dashboard";
 include ('includes/dheader.php');?>
 
 <div class='widg nobutton'>
-<h4>Quick Statistic</h4>
+<h4>Quick Statistics</h4>
 <div class="row" id='quicks'>
     <div class="kotaq col-md-auto actq">
 	<div class='ikon ac-us'></div>
@@ -31,18 +31,44 @@ include ('includes/dheader.php');?>
     </div>
   </div>
 </div>
-<div class="row">
-<div class="col">
+<div id="stats">
+<div id="stats1">
 <div class='widg'>
-<h4>Revenue Statistic</h4>
-
+<div class='rightpad'>
+<div class='widh'>
+<div class='lefte'>
+<h4>Revenue Statistics</h4>
 </div>
-</div><div class="col">
+<div class='righte'>
+<a href='#'>View all</a>
+</div>
+<div style='clear: both;'></div>
+</div>
+<div class='kotaqu'>
+<canvas id="chartr"></canvas>
+</div>
+</div>
+</div>
+</div>
+<div id="stats2">
 <div class='widg'>
-<h4>User Statistic</h4>
-
+<div class='leftpad'>
+<div class='widh'>
+<div class='lefte'>
+<h4>User Statistics</h4>
+</div>
+<div class='righte'>
+<a href='#'>View all</a>
+</div>
+<div style='clear: both;'></div>
+</div>
+<div class='kotaqu'>
+<canvas id="chartu"></canvas>
 </div>
 </div>
+</div>
+</div>
+<div style='clear: both;'></div>
 </div>
 <div class='widg'>
 <div class='widh'>

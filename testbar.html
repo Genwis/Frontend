@@ -1,0 +1,111 @@
+<html>
+<head>
+
+<script src='./js/Chart.min.js'></script>
+<style>
+canvas{
+max-width: 440px;
+}
+</style>
+</head>
+<body>
+hell
+<canvas id="chartu"></canvas>
+<canvas id="chartr"></canvas>
+<script>
+var ctx = document.getElementById("chartu");
+var chartu = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["March", "April", "May", "June"],
+		
+        datasets: [{
+            label: 'number of users',
+            data: [22500, 23600, 24000, 26000],
+            backgroundColor: [
+                '#64b5f6',
+                '#42a5f5',
+                '#2196f3',
+                '#349df1',
+            ],/*
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],*/
+            borderWidth: 0
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:false,
+					min: 21000,
+					max: 27000
+                }
+            }],
+			xAxes: [{
+				gridLines:{
+					display: false
+				}
+			}]
+        },
+		
+		legend: {
+            display: false
+        }
+    }
+});
+
+
+
+var ctx = document.getElementById("chartr");
+var chartr = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ["March", "April", "May", "June","July","Agustus"],
+		
+        datasets: [{
+            label: 'number of users',
+            data: [135, 100, 175, 250, 180,220],
+            backgroundColor: [
+                '#fef0b1'
+            ],
+			borderColor:[
+				'#fdd835'
+			],/*
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+            ],*/
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:false,
+					min: 0,
+					max: 300
+                }
+            }],
+			xAxes: [{
+				gridLines:{
+					display: false
+				}
+			}]
+        },
+		
+		legend: {
+            display: false
+        }
+    }
+});
+</script>
+</body>
+</html>
