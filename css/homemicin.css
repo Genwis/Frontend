@@ -4,6 +4,15 @@ html{
 body{
 
 }
+i{
+	font-style: italic;
+}
+a{
+text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
 .full{
 position: relative;	
     height: 100%;
@@ -12,7 +21,7 @@ position: relative;
 	padding: 42px;
 	margin: 0 auto;
 	line-height: 45px;
-	max-width: 1210px;
+	max-width:1100px;
 	color:#fff;
 
 
@@ -29,6 +38,9 @@ position: relative;
 }
 .signin{
 	visibility: hidden;
+	padding: 0!important;
+	width: 77px;
+    height: 1px;
 }
 .whitebut{
 	float: right;
@@ -70,7 +82,7 @@ position: relative;
 	padding-top:80px;
 }
 .ghost{
-	height:386px;
+	height:306px;
 	/*padding-bottom:395px;*/
     display: table;
 	
@@ -117,7 +129,7 @@ font-family: Poppins;
     text-align: left;
     color: #ffffff;
     padding: 0 40px;
-    border-radius: 26px;
+    border-radius: 28px;
     border: 2px solid #fff;
     height: 52px;
     display: table;
@@ -290,7 +302,7 @@ h2.mailh{
 #features #mai{
 	min-height: 571px;
 	margin-left: 630px;
-	margin-right: 200px;
+	margin-right: 180px;
 }
 #features #mai h2{
 	text-align: left;
@@ -323,40 +335,26 @@ h2.mailh{
 	margin-bottom: 30px;
 }
 #features #mai .bults{
-	width: 60px;
+	width: 59px;
 	height: 60px;
 	float: left;
-	background: linear-gradient(335deg, #2ecc71, #13e36b);
+
 	border-radius: 50%;
 	margin-right: 28px;
-	position: relative;
 }
-#features #mai .bults div{
-top: 0;
-bottom: 0;
-margin: auto;
-position: absolute;
-left: 0;
-right: 0;
+
+#features #mai .bults#vie{
+	background-image: url(../icon/static/generatei.png);
 }
-#features #mai .bults#vie div{
-	background-image: url(../icon/static/stats.png);
-	width: 29px;
-	height: 25px;
+#features #mai .bults#mna{
+	background-image: url(../icon/static/change.png);
 }
-#features #mai .bults#mna div{
-	background-image: url(../icon/static/inter.png);
-	width: 23px;
-	height: 25px;
-}
-#features #mai .bults#mnu div{
-	background-image: url(../icon/static/user.png);
-	width: 19px;
-	height: 25px;
+#features #mai .bults#mnu{
+	background-image: url(../icon/static/book.png);
 }
 
 footer{
-	max-width: 907px;
+	    max-width: 974px;
 	margin: 0 auto;
 	padding-bottom: 67px;
 }
@@ -427,4 +425,54 @@ footer #tw{
 footer #ig{
 	background-image: url(../icon/static/ig.png);
 	float: right;
+}
+@media only screen and (max-width: 968px) {
+	.daleman h1{
+		font-size: 28px;
+	}
+	.daleman p{
+		font-size: 14px;
+	}
+	.micin {
+		padding-top:30px!important;
+	}
+	#features #back{
+		width: 90%;
+		background-size: 100%;
+		position: static;
+		margin: 0 auto;
+		    padding-bottom: 100%;
+			min-height:0;
+	}
+	#features #mai{
+		margin: 0 20px;
+	}
+	#conq .insd{
+		margin: 0 15px;
+		padding: 37px 22px;
+	}
+	#about, footer{
+		padding: 20px;
+	}
+	h2.mailh{
+		font-size: 23px;
+	}
+}
+@media only screen and (max-width: 775px) {
+	.daleman{
+		padding: 0 40px;
+	}
+#conq h3{
+	font-size: 27px;
+}
+#conq p{
+	font-size: 20px;
+}
+	#conq .norm{
+		float:none;
+		width: auto;
+		margin: 5px auto;
+    padding: 37px 22px;
+    display: table;
+	}
 }

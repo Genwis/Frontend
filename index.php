@@ -24,7 +24,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 <div class="full">
 <div class='bag' id='opener'>
 <nav id='barnav'>
-<div class='juds'>Genpart</div>	<div class='menus'><a href='#howitworks' class='m'>Cara Kerja</a> <a href='#features' class='m'>Fitur</a> <a href='#about' class='m'>Tentang Kami</a><span class='signin whitebut' href='#'>Sign in</span></div> 
+<div class='juds'>Genpart</div>	<div class='menus'><a href='#howitworks' class='m'>Cara Kerja</a> <a href='#features' class='m'>Fitur</a> <a href='#about' class='m'>Tentang Kami</a><span class='signin whitebut' href='#'></span></div> 
 </nav>
 <div class='ghost'>
 <div class='daleman'>
@@ -36,7 +36,7 @@ Genwis adalah aplkasi mobile yang dapat mengatur rencana perjalanan wisata anda 
 <br/>
 berdasarkan kota tujuan, jangka waktu dan budget sesuai dengan yang anda tentukan.
 </p>
-<a href='./login.php' class='getstart'>Mulai Sekarang</a>
+<a href='#' class='getstart'>Mulai Sekarang</a>
 </div>
 </div>
 
@@ -91,25 +91,25 @@ melalu aplikasi Genwis.
 <div class='micin' id='features'>
 <div id='back'></div>
 <div id='mai'>
-<h2>Nikmati Wisatamu dengan <span style='color:#45d081'>3</span> fitur yang menarik !</h2>
+<h2>Nikmati Wisatamu dengan <span style='color:#45d081'>3</span> fitur yang menarik!</h2>
 
 <p id='par1'>
 Genwis mempunyai beberapa fitur yang dapat anda nikmati diantaranya generate, booking dan change.
 </p>
 <div>
-<div class='bults' id='vie'><div></div></div>
+<div class='bults' id='vie'></div>
 <h3>Generate</h3>
 <p>
 Anda dapat melihat rencana perjalan wisata berdarakan budget, kota tujuan dan jangka waktu yang anda inginkan.
 </p>
 <div style='clear:both;'></div>
-<div class='bults' id='mna'><div></div></div>
+<div class='bults' id='mna'></div>
 <h3>Change</h3>
 <p>
 Anda dapat mengganti setiap attraction jika anda merasa attraction tersebut kurang menarik.
 </p>
 <div style='clear:both;'></div>
-<div class='bults' id='mnu'><div></div></div>
+<div class='bults' id='mnu'></div>
 <h3>Book</h3>
 <p>
 Anda dapat memesan rencana perjalan wisata yang telah anda tentukan dengan mudah melalui aplikasi genwis.
@@ -132,19 +132,19 @@ Anda dapat memesan rencana perjalan wisata yang telah anda tentukan dengan mudah
 All rights reserved
 </div>
 <div class='bag'>
-<h3>Links</h3>
+<h3>Pranala</h3>
 <ul>
-<li><a href='#'>How it works</a></li>
-<li><a href='#'>Features</a></li>
-<li><a href='#'>About</a></li>
+<li><a href='#howitworks'>Cara Kerja</a></li>
+<li><a href='#features'>Fitur</a></li>
+<li><a href='#about'>Tentang Kami</a></li>
 </ul>
 </div>
 <div class='bag' id='contact'>
-<h3>Contact</h3>
+<h3>Kontak</h3>
 <ul>
 <li>(+62)81992132785</li>
 <li>genwisde@gmail.com</li>
-<li>Jl. Telkom University Gd. Kultubai Utara 106</li>
+<li>Jl. Sukabirus Near Telkom University</li>
 <li>Bandung, West Java</li>
 </ul>
 </div>
