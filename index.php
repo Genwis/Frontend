@@ -24,20 +24,19 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 <div class="full">
 <div class='bag' id='opener'>
 <nav id='barnav'>
-<div class='juds'>Genpart</div>	<div class='menus'><a href='#howitworks' class='m'>How it works</a> <a href='#features' class='m'>Features</a> <a href='#about' class='m'>About</a><a class='signin whitebut' href='./login.php'>Sign in</a></div> 
+<div class='juds'>Genpart</div>	<div class='menus'><a href='#howitworks' class='m'>Cara Kerja</a> <a href='#features' class='m'>Fitur</a> <a href='#about' class='m'>Tentang Kami</a><span class='signin whitebut' href='#'>Sign in</span></div> 
 </nav>
 <div class='ghost'>
 <div class='daleman'>
 
 
-<h1><span class='gpart'>Genwis Partner</span> for growth local travel agents</h1>
+<h1><span class='gpart'>Genwis</span>, aplikasi untuk kebutuhan wisatamu!</h1>
 <p>
-Genwis Partner is a platform for local travel agents that would help to growth tour business
+Genwis adalah aplkasi mobile yang dapat mengatur rencana perjalanan wisata anda dengan mudah
 <br/>
-in the some city with three powerfull fiture is view all statistic, manage user and manage attraction.
+berdasarkan kota tujuan, jangka waktu dan budget sesuai dengan yang anda tentukan.
 </p>
-<!--<a class='btn btn-primary'>Get Started</a>-->
-<a href='./login.php' class='getstart'>Get Started</a>
+<a href='./login.php' class='getstart'>Mulai Sekarang</a>
 </div>
 </div>
 
@@ -46,7 +45,7 @@ in the some city with three powerfull fiture is view all statistic, manage user 
 
 
 <div class='micin' id='howitworks'>
-<h2 class='howi'>How it works</h2>
+<h2 class='howi'>Cara Kerja</h2>
 <hr/>
 <div id='conq'>
 <div class='wite'>
@@ -54,33 +53,33 @@ in the some city with three powerfull fiture is view all statistic, manage user 
 <div class='norm'>
 <div class='insd'>
 <div class='logat' id='reg'></div>
-<h3>Register Account</h3>
+<h3>Log In Akun</h3>
 <p>
-Register your account as<br/>
-local travel agent to<br/>
-manage your attractions.
+Daftarkan akun dan login akun<br/>
+anda sebelum mulai generate<br/>
+itinerary wisata.
 </p>
 </div>
 </div>
 <div class='norm'>
 <div class='insd'>
 <div class='logat' id='atr'></div>
-<h3>Add Attraction</h3>
+<h3>Generate Itinerary</h3>
 <p>
-Add attraction that you can<br/>
-handle for traveling user needs<br/>
-on add attraction menu. 
+Isi formulir kota tujuan,  budget,<br/>
+dan jangka waktu sebagai<br/>
+penentuan itinerary.
 </p>
 </div>
 </div>
 <div class='norm'>
 <div class='insd'>
 <div class='logat' id='cal'></div>
-<h3>Wait for Us to Call</h3>
+<h3>Pesan Itinerary</h3>
 <p>
-We will call you via this web<br/>
-if there is any attraction<br/>
-you handle is needed
+Kedepannya, Genwis akan bisa<br/>
+memesan itinerary langsung<br/>
+melalu aplikasi Genwis.
 </p>
 </div>
 </div>
@@ -92,39 +91,37 @@ you handle is needed
 <div class='micin' id='features'>
 <div id='back'></div>
 <div id='mai'>
-<h2>Develop your business with <span style='color:#45d081'>3</span> powerful features</h2>
+<h2>Nikmati Wisatamu dengan <span style='color:#45d081'>3</span> fitur yang menarik !</h2>
+
 <p id='par1'>
-Genwis Partner has three powerful features for local travel agents that could promote your business.
+Genwis mempunyai beberapa fitur yang dapat anda nikmati diantaranya generate, booking dan change.
 </p>
 <div>
 <div class='bults' id='vie'><div></div></div>
-<h3>View All Statistic</h3>
+<h3>Generate</h3>
 <p>
-You could see all of statistics of your 
-revenue, active user, statics revenue per-month etc. on this website.
+Anda dapat melihat rencana perjalan wisata berdarakan budget, kota tujuan dan jangka waktu yang anda inginkan.
 </p>
 <div style='clear:both;'></div>
 <div class='bults' id='mna'><div></div></div>
-<h3>Manage Attraction</h3>
+<h3>Change</h3>
 <p>
-You could manage your attraction that you can service
-our users in the city.
+Anda dapat mengganti setiap attraction jika anda merasa attraction tersebut kurang menarik.
 </p>
 <div style='clear:both;'></div>
 <div class='bults' id='mnu'><div></div></div>
-<h3>Manage User</h3>
+<h3>Book</h3>
 <p>
-You could manage your users who booked with your
-services, such as editing or deleting a user data.
+Anda dapat memesan rencana perjalan wisata yang telah anda tentukan dengan mudah melalui aplikasi genwis.
 </p>
 <div style='clear:both;'></div>
 </div>
 </div>
 </div>
 <div class='micin' id='about'>
-<h2 class='mailh'>Type your email here for more information from us</h2>
+<h2 class='mailh'>Masukan <i>E-mail</i> anda di sini untuk mendapatkan informasi kami</h2>
 <div class='modalb' id='subox'>
-<div id='mailrap'><div id='mail'></div><input type='text' class='inputs' placeholder='Type your email address here'> <a class='whitebut send' href='#'>Send</a></div>
+<div id='mailrap'><div id='mail'></div><input type='text' class='inputs' placeholder='Tik alamat e-mail anda di sini'> <a class='whitebut send' href='#'>Kirim</a></div>
 </div>
 </div>
 

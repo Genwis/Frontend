@@ -27,6 +27,9 @@ position: relative;
 .menus,.juds,.signin{
 	display:block;
 }
+.signin{
+	visibility: hidden;
+}
 .whitebut{
 	float: right;
 	border-radius: 22px;
@@ -264,7 +267,7 @@ h2.mailh{
 		background-image: url(../icon/static/atr.png);
 }
 .logat#cal{
-		background-image: url(../icon/static/cal.png);
+		background-image: url(../icon/static/psn.png);
 }
 #features{
 	position: relative;
@@ -274,12 +277,12 @@ h2.mailh{
 }
 #features #back{
 	margin: 0 auto;
-	min-height:701px;
-	background-image: url(../icon/static/grouped.png);
+	min-height:708px;
+	background-image: url(../icon/static/group-6.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	position: absolute;
-	left:-420px;
+	left:-320px;
 	z-index: -1;
 	width: 971px;
 	top:0;
