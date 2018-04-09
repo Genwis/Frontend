@@ -149,8 +149,8 @@ All rights reserved
 <div class='bag' id='contact'>
 <h3>Kontak</h3>
 <ul>
-<li>(+62)81992132785</li>
-<li>genwisde@gmail.com</li>
+<li>(+62)87734201000</li>
+<li>genwisdev@gmail.com</li>
 <li>Jl. Sukabirus Near Telkom University</li>
 <li>Bandung, West Java</li>
 </ul>
