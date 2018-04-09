@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Genpart</title>
+  <title>Genwis</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -17,6 +17,12 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1000);
+	
+});
+$(document).ready(function(){
+    $("#burger").click(function(){
+        $(".abso").toggleClass("active");
+    });
 });
 </script>
 </head>
@@ -24,7 +30,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 <div class="full">
 <div class='bag' id='opener'>
 <nav id='barnav'>
-<div class='juds'>Genpart</div>	<div class='menus'><a href='#howitworks' class='m'>Cara Kerja</a> <a href='#features' class='m'>Fitur</a> <a href='#about' class='m'>Tentang Kami</a><span class='signin whitebut' href='#'></span></div> 
+<div class='juds'>Genwis</div>	<div class='menus'><button href="javascript:void(0);" id='burger' class="burger" >&#9776;</button><div class='abso'><a href='#howitworks' class='m'>Cara Kerja</a> <a href='#features' class='m'>Fitur</a> <a href='#about' class='m'>Tentang Kami</a><span class='signin whitebut' href='#'></span></div> </div>
+
 </nav>
 <div class='ghost'>
 <div class='daleman'>

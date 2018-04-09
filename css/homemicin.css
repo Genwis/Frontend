@@ -13,6 +13,16 @@ text-decoration: none;
 a:hover{
 	text-decoration: underline;
 }
+.burger{
+display: none;
+    vertical-align: middle;
+	font-size:30px;
+color: #fff;
+border: 0!important;
+background: transparent!important;
+border-radius: 3px;
+outline: none;
+}
 .full{
 position: relative;	
     height: 100%;
@@ -302,7 +312,7 @@ h2.mailh{
 #features #mai{
 	min-height: 571px;
 	margin-left: 630px;
-	margin-right: 180px;
+	margin-right: 10%;
 }
 #features #mai h2{
 	text-align: left;
@@ -433,8 +443,14 @@ footer #ig{
 	.daleman p{
 		font-size: 14px;
 	}
+	.daleman p br{
+		display: none;
+	}
 	.micin {
 		padding-top:30px!important;
+	}
+	#features #mai h2{
+	text-align: center;
 	}
 	#features #back{
 		width: 90%;
@@ -449,7 +465,7 @@ footer #ig{
 	}
 	#conq .insd{
 		margin: 0 15px;
-		padding: 37px 22px;
+		padding: 37px 10%;
 	}
 	#about, footer{
 		padding: 20px;
@@ -457,10 +473,46 @@ footer #ig{
 	h2.mailh{
 		font-size: 23px;
 	}
+	#conq p br {
+    display: none;
+}
+footer .bag, footer #allr,footer #contact,footer #sosmed{
+	width:50%;
+	margin-bottom: 30px;
+}
 }
 @media only screen and (max-width: 775px) {
+	.burger{
+    display: inline-block;
+	}
+	#barnav {
+		padding: 10px 15px;
+	}
+	.abso{
+		position:absolute;
+		left:15px;
+		right:15px;
+		display: none;
+		background: #fff;
+		margin-top: 10px;
+		border-radius: 10px;
+		padding: 10px 0;
+	}
+	.active {
+		display: block;
+	}
+	.menus .abso a{
+		display: block;
+		color: #2ecc71;
+	}
+	.menus{
+		text-align: right;
+	}
 	.daleman{
 		padding: 0 40px;
+	}
+	#conq{
+		margin: 30px auto 0;
 	}
 #conq h3{
 	font-size: 27px;
@@ -468,11 +520,38 @@ footer #ig{
 #conq p{
 	font-size: 20px;
 }
+
+#conq .logat{
+	    width: 204px;
+    height: 147px;
+}
 	#conq .norm{
 		float:none;
 		width: auto;
 		margin: 5px auto;
     padding: 37px 22px;
     display: table;
+	}
+	footer .bag, footer #allr,footer #contact{
+		    float: none;
+    width: auto;
+    display: table;
+    margin: 50px auto;
+    text-align: center;
+	}
+	footer h3{
+		font-size: 30px;
+		text-align: center;
+	}
+	footer #sosmed{
+		float: none;
+    width: auto;
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+	}
+	footer li {
+    font-size: 19px;
+    line-height: 40px;
 	}
 }
