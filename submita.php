@@ -48,6 +48,7 @@ if($open5==true){$opent5=$_POST['opent5'];$closet5=$_POST['closet5'];}
 if($open6==true){$opent6=$_POST['opent6'];$closet6=$_POST['closet6'];}
 if($open7==true){$opent7=$_POST['opent7'];$closet7=$_POST['closet7'];}
 
+/*
 echo "name: ".$name;echo "<br>";
 echo "website: ".$website;echo "<br>";
 echo "phone: ".$phone;echo "<br>";
@@ -67,7 +68,7 @@ echo "beaches: ".$beaches;echo "<br>";
 echo "mountain: ".$mountain;echo "<br>";
 echo "museum: ".$museum;echo "<br>";
 echo "amusement: ".$amusement;echo "<br>";
-echo "hidden_paradise: ".$hidden_paradise;echo "<br>";
+echo "hidden_paradise: ".$hidden_paradise;echo "<br>";*/
 //var_dump($_POST['file']);
 //file_get_contents( $_FILES['YOUR_FILE_FIELD_NAME']['tmp_name'] );
 //echo $_FILES["photo"]['tmp_name'];
@@ -103,55 +104,55 @@ if(isset($_POST['name'])){
   array(
   'open' => $open1,
   'time' => array(
-	'open' => (int)$opent1,
-	'close' => (int)$closet1
+	'open' => ((int)$opent1)*60,
+	'close' => ((int)$closet1)*60
 	)
   ),
   array(
   'open' => $open2,
   'time' => array(
-	'open' => (int)$opent2,
-	'close' => (int)$closet2
+	'open' => ((int)$opent2)*60,
+	'close' => ((int)$closet2)*60
 	)
   ),
   array(
   'open' => $open3,
   'time' => array(
-	'open' => (int)$opent3,
-	'close' => (int)$closet3
+	'open' => ((int)$opent3)*60,
+	'close' => ((int)$closet3)*60
 	)
   ),
   array(
   'open' => $open4,
   'time' => array(
-	'open' => (int)$opent4,
-	'close' => (int)$closet4
+	'open' => ((int)$opent4)*60,
+	'close' => ((int)$closet4)*60
 	)
   ),
   array(
   'open' => $open5,
   'time' => array(
-	'open' => (int)$opent5,
-	'close' => (int)$closet5
+	'open' => ((int)$opent5)*60,
+	'close' => ((int)$closet5)*60
 	)
   ),
   array(
   'open' => $open6,
   'time' => array(
-	'open' => (int)$opent6,
-	'close' => (int)$closet6
+	'open' => ((int)$opent6)*60,
+	'close' => ((int)$closet6)*60
 	)
   ),
   array(
   'open' => $open7,
   'time' => array(
-	'open' => (int)$opent7,
-	'close' => (int)$closet7
+	'open' => ((int)$opent7)*60,
+	'close' => ((int)$closet7)*60
 	)
   )
 )  
 );
-echo '<pre>' . var_export(json_encode( $data ), true) . '</pre>';
+//echo '<pre>' . var_export(json_encode( $data ), true) . '</pre>';
 	//var_dump(json_encode( $data ));
 	$optionsz = array(
   'http' => array(
@@ -165,42 +166,53 @@ echo '<pre>' . var_export(json_encode( $data ), true) . '</pre>';
 
 $contextz  = stream_context_create( $optionsz );
 $resultz = file_get_contents( 'http://api.generatorwisata.com/api/attraction', false, $contextz );
-$responsez = json_decode( $resultz );
-var_dump($responsez);
+$responsez = json_decode( $resultz,true );
+
+//var_dump($responsez);
+echo "<div class='notif'> ID Generated: ".$responsez['id']."</div>";
 }
 
-
+//8e6c2134-0ad7-41ce-8365-a4d686a8ef0f
 if(isset($_FILES["file"]) && $_FILES["file"]["error"] == 0){
 	$atrid="";
 	if(isset($_POST['atrid']))$atrid=$_POST['atrid'];
-	define('MULTIPART_BOUNDARY', '--------------------------'.microtime(true));
-	$header = 
-"Authentication: WshVVPQWJjdjOZckJvsdOiVGwp3KkMNQvPNCjXehlMVEt4s7EYN3lvybTs8TWwPPZvwLvensenLo6cOHVR01inbulpZgXcaQCwpenKU6CgVW53YiZt34mdBY\r\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW";
-
-//'\r\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW';//.MULTIPART_BOUNDARY;//Content-Type: multipart/form-data\r\n
-	define('FORM_FIELD', 'file'); 
+		define('FORM_FIELD', 'file'); 
 	$filename = $_FILES["file"]["tmp_name"];//"/path/to/uploaded/file.zip";
 $file_contents = file_get_contents($_FILES["file"]['tmp_name']);    
+	define('MULTIPART_BOUNDARY', '--------------------------'.microtime(true));
+	//define('MULTIPART_BOUNDARY', '----WebKitFormBoundary7MA4YWxkTrZu0gW');//.microtime(true));
+	$header = 
+"Authentication: WshVVPQWJjdjOZckJvsdOiVGwp3KkMNQvPNCjXehlMVEt4s7EYN3lvybTs8TWwPPZvwLvensenLo6cOHVR01inbulpZgXcaQCwpenKU6CgVW53YiZt34mdBY
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Length: ". filesize($filename)."\r\n\r\n"; //boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW";
+
+//'\r\nContent-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW';//.MULTIPART_BOUNDARY;//Content-Type: multipart/form-data\r\n
 
 
 
+/*
 $content =  "--".MULTIPART_BOUNDARY."\r\n".
             "Content-Disposition: form-data; name=\"".FORM_FIELD."\"; filename=\"".basename($filename)."\"\r\n".
-            "Content-Type: image/jpeg\r\n\r\n".
-			
-            $file_contents."\r\n";
+            "Content-Type: image/jpeg\r\nContent-Length: ". filesize($filename)."\r\n\r\n".$file_contents."\r\n";
 
 // add some POST fields to the request too: $_POST['foo'] = 'bar'
 $content .= "--".MULTIPART_BOUNDARY."\r\n".
-            "Content-Disposition: form-data; name=\"foo\"\r\n\r\n".
-            "bar\r\n";
+            "Content-Disposition: form-data; name=\"id\"\r\n\r\n".
+            $_POST['atrid']."\r\n";
 
 // signal end of request (note the trailing "--")
 $content .= "--".MULTIPART_BOUNDARY."--\r\n";
-
-//$content = $file_contents;
-
+*/
+//$content ="aaaaa";//
+$yy="kk.png";
+$content =  "--".MULTIPART_BOUNDARY."\r\n".
+            "Content-Disposition: form-data; name=\"".FORM_FIELD."\"; filename=\"".basename($filename)."\"\r\n".
+            "Content-Type: image/png\r\n
+\r\n".$file_contents."\r\n";
+$content .= "--".MULTIPART_BOUNDARY."--";
+echo '<pre>' . var_export($header, true) . '</pre>';
 echo '<pre>' . var_export($content, true) . '</pre>';
+//echo "enddd";
+//echo $content;
 $context = stream_context_create(array(
     'http' => array(
           'method' => 'POST',
@@ -208,16 +220,22 @@ $context = stream_context_create(array(
           'content' => $content
     )
 ));
+//echo '<pre>' . var_export($context, true) . '</pre>';
 	$res=file_get_contents('http://api.generatorwisata.com/api/attraction/upload/'.$atrid, false, $context);
 	echo $res;
-	
-	
-	
+	var_dump($http_response_header);
+	//echo basename($filename);
+	//echo $_POST['atrid'];
+	echo http_get_request_body();
 	echo "uploaded";
 	//var_dump(file_get_contents($_FILES["photo"]['tmp_name']));
 }
 echo "<br><br><br><br>";
   }
+  
+$getloc = json_decode(file_get_contents('http://api.generatorwisata.com/api/locations',false),true);
+//echo $getloc;
+
 ?>
 <form action="" method='POST'>
 <h1>ADD</h1>
@@ -227,7 +245,20 @@ echo "<br><br><br><br>";
 <label>Recommended duration: </label><input type='text' name='rec'><br>
 <label>Price: </label><input type='text' name='price'><br>
 <label>Route: </label><input type='text' name='route'><br>
-<label>Location_id: </label><input type='text' name='locid'><br>
+<!--<label>Location_id: </label><input type='text' name='locid'><br>-->
+<label>Location_id: </label>
+<select name='locid'>
+<?php
+foreach($getloc as $item) { //foreach element in $arr
+    //$uses = ; //etc
+	echo '<option value="'.$item['id'].'">'.$item['city'].'</option>';
+	
+
+}
+  ?>
+ 
+</select>
+<br>
 <label>Description: </label><input type='text' name='desc'><br>
 <label>Coordinate latitude: </label><input type='text' name='lati'><br>
 <label>Coordinate longtitude: </label><input type='text' name='longti'><br>
@@ -281,9 +312,96 @@ echo "<br><br><br><br>";
 <label>close: </label><input type='number' name='closet7'><br>
 <input type='submit' value='submit'>
 </form>
+<!--
 <form action="" method='POST' enctype="multipart/form-data">
 <h1>ADD PHOTO</h1>
-<label>Attraction id: </label><input type='text' name='atrid'><br>
+<label>Attraction id: </label><input type='text' name='atrid' value='8e6c2134-0ad7-41ce-8365-a4d686a8ef0f'><br>
 <label>photo: </label><input type="file" name="file">
 <input type='submit' value='submit'>
+</form>-->
+<h1>ADD PHOTO</h1>
+
+<form id="ajax-upload" action="http://api.generatorwisata.com/api/attraction/upload/64402cc8-fc01-4c7e-a0c8-887e145b21e1" method="post" enctype="multipart/form-data">
+<label>Attraction id: </label><input id='aidi' type='text' name='atrid'><br><br>
+
+File: <input type="file" name="submitted"><br><br>
+<!--<input type="hidden" name="type" value="image/jpeg"/>
+<input type="hidden" name="name" value="foto.jpg"/>-->
+  <button type="submit">Upload</button>
 </form>
+<div id="result"></div>
+<script>
+/*
+document.addEventListener("DOMContentLoaded", function(){
+      document.getElementById('ajax-upload').addEventListener("submit", function(e){
+        e.preventDefault()
+        var form = e.target
+        var data = new FormData(form)
+        
+        var request = new XMLHttpRequest()
+        //data.append('file', {uri: isrc, type: 'image/jpeg', name: 'photoProfile.jpeg'})
+        request.onreadystatechange = function(){
+          document.getElementById("result").innerText = request.responseText
+        }
+        
+        request.open(form.method, form.action)//ini ntar ganti
+		request.setRequestHeader('Content-Type', 'multipart/form-data')
+		request.setRequestHeader('Authentication', 'WshVVPQWJjdjOZckJvsdOiVGwp3KkMNQvPNCjXehlMVEt4s7EYN3lvybTs8TWwPPZvwLvensenLo6cOHVR01inbulpZgXcaQCwpenKU6CgVW53YiZt34mdBY')
+        request.send(data)
+      })
+    })*/
+	document.addEventListener("DOMContentLoaded", function(){
+      document.getElementById('ajax-upload').addEventListener("submit", function(e){
+        e.preventDefault()
+		var input = document.querySelector('input[type="file"]')
+		
+		var atrid = document.getElementById("aidi").value;
+		let data = new FormData()
+      data.append('file', input.files[0])
+	fetch("http://api.generatorwisata.com/api/attraction/upload/"+atrid, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        //'Content-Type': 'multipart/form-data',
+        'Authentication': 'WshVVPQWJjdjOZckJvsdOiVGwp3KkMNQvPNCjXehlMVEt4s7EYN3lvybTs8TWwPPZvwLvensenLo6cOHVR01inbulpZgXcaQCwpenKU6CgVW53YiZt34mdBY'
+      },
+      body: data
+    }).then((response) => response.text())
+      .then((responseText) => {
+         console.log(responseText);
+		 alert('upload sukses');
+      }).catch((error) => {
+      console.error(error);
+    });
+	
+	
+
+	/*
+var data = new FormData()
+data.append('file', input.files[0])
+data.append('user', 'hubot')
+
+fetch('/avatars', {
+  method: 'POST',
+   headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'multipart/form-data',
+        'Authentication': 'WshVVPQWJjdjOZckJvsdOiVGwp3KkMNQvPNCjXehlMVEt4s7EYN3lvybTs8TWwPPZvwLvensenLo6cOHVR01inbulpZgXcaQCwpenKU6CgVW53YiZt34mdBY'
+      },
+  body: data
+})*/
+	
+	
+	
+	})
+    })
+</script>
+<style>
+.notif{
+	    display: table;
+    background: #5fcc80;
+    padding: 10px 20px;
+    border: 1px solid #66ad6c;
+    border-radius: 5px;
+    color: #fff;
+}

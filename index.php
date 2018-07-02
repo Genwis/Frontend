@@ -43,7 +43,7 @@ Genwis adalah aplkasi mobile yang dapat mengatur rencana perjalanan wisata anda 
 <br/>
 berdasarkan kota tujuan, jangka waktu dan budget sesuai dengan yang anda tentukan.
 </p>
-<a href='#' class='getstart'>Mulai Sekarang</a>
+<a href='https://play.google.com/store/apps/details?id=com.genwis' class='getstart' target='_blank'>Download Sekarang</a>
 </div>
 </div>
 
@@ -107,7 +107,7 @@ Genwis mempunyai beberapa fitur yang dapat anda nikmati diantaranya generate, bo
 <div class='bults' id='vie'></div>
 <h3>Generate</h3>
 <p>
-Anda dapat melihat rencana perjalan wisata berdarakan budget, kota tujuan dan jangka waktu yang anda inginkan.
+Anda dapat melihat rencana perjalanan wisata berdarakan budget, kota tujuan dan jangka waktu yang anda inginkan.
 </p>
 <div style='clear:both;'></div>
 <div class='bults' id='mna'></div>
@@ -119,7 +119,7 @@ Anda dapat mengganti setiap attraction jika anda merasa attraction tersebut kura
 <div class='bults' id='mnu'></div>
 <h3>Book</h3>
 <p>
-Anda dapat memesan rencana perjalan wisata yang telah anda tentukan dengan mudah melalui aplikasi genwis.
+Anda dapat memesan rencana perjalanan wisata yang telah anda tentukan dengan mudah melalui aplikasi genwis.
 </p>
 <div style='clear:both;'></div>
 </div>
@@ -128,7 +128,7 @@ Anda dapat memesan rencana perjalan wisata yang telah anda tentukan dengan mudah
 <div class='micin' id='about'>
 <h2 class='mailh'>Masukan <i>E-mail</i> anda di sini untuk mendapatkan informasi kami</h2>
 <div class='modalb' id='subox'>
-<div id='mailrap'><div id='mail'></div><input type='text' class='inputs' placeholder='Tik alamat e-mail anda di sini'> <a class='whitebut send' href='#'>Kirim</a></div>
+<div id='mailrap'><div id='mail'></div><input type='text' class='inputs' placeholder='Ketik alamat e-mail anda di sini'> <a class='whitebut send' href='#'>Kirim</a></div>
 </div>
 </div>
 
@@ -159,7 +159,7 @@ All rights reserved
 <a href='#' class='sosmed' id='fb'></a>
 <div class='sect'>
 <a href='#' class='sosmed' id='tw'></a>
-<a href='#' class='sosmed' id='ig'></a>
+<a href='https://www.instagram.com/gen.wis/' class='sosmed' id='ig'></a>
 <div style='clear: both;'></div>
 </div>
 </div>

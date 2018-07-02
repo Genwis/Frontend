@@ -252,6 +252,11 @@ h2.mailh{
   box-sizing:border-box;
   margin: 0 36px;
   padding: 74px 45px;
+  -webkit-transition: box-shadow .6s ease-in-out;
+  transition: box-shadow .6s ease-in-out;
+}
+#conq .insd:hover{
+	box-shadow:0 0 50px #ececec;
 }
 #conq .wite{
 	width: 0.5%;
