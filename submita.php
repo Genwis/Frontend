@@ -86,7 +86,7 @@ if(isset($_POST['name'])){
   'description' => $desc,
   'coordinate' => array(
 	'latitude' => $lati,
-	'longtitude' => $longti
+	'longitude' => $longti
   ),
   'tags' => array(
 	'culture' => $culture,
