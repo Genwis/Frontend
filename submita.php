@@ -312,13 +312,7 @@ foreach($getloc as $item) { //foreach element in $arr
 <label>close: </label><input type='number' name='closet7'><br>
 <input type='submit' value='submit'>
 </form>
-<!--
-<form action="" method='POST' enctype="multipart/form-data">
-<h1>ADD PHOTO</h1>
-<label>Attraction id: </label><input type='text' name='atrid' value='8e6c2134-0ad7-41ce-8365-a4d686a8ef0f'><br>
-<label>photo: </label><input type="file" name="file">
-<input type='submit' value='submit'>
-</form>-->
+
 <h1>ADD PHOTO</h1>
 
 <form id="ajax-upload" action="http://api.generatorwisata.com/api/attraction/upload/64402cc8-fc01-4c7e-a0c8-887e145b21e1" method="post" enctype="multipart/form-data">
